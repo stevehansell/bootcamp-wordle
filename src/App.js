@@ -20,8 +20,6 @@ function App() {
     return obj;
   };
 
-  const handleGameOver = () => {};
-
   const onKeyboardEnter = () => {
     const currentGuess = guesses[guessNumber];
 
