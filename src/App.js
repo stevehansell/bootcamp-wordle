@@ -14,6 +14,8 @@ function App() {
   const [gameOver, setGameOver] = useState(null);
   const [grades, setGrades] = useState(["", "", "", "", "", ""]);
 
+  // This returns a data structure that looks like {'r': 'CORRECT', 'e': 'CORRECT', 'p': 'WRONG', 't': 'PRESENT'...}
+  // This creates a mapping for the keyboard to indicate the state of each key as the user submits guesses
   const guessedKeysWithScore = (guess, scores) => {
     const obj = {};
     guess.split("").forEach((char, index) => (obj[char] = scores[index]));
